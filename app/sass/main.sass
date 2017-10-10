@@ -1,8 +1,56 @@
 @import "var.sass"
 @import "norm.sass"
 
-body
-  background-color: pink
+.head 
+	background-image: url("../img/BG1.png")
+	background-size: cover
+	background-repeat: no-repeat
+	min-height: 720px
+	padding-top: 60px
+
+.frame p
+	display: inline-block
+	margin-top: 110px
+	color: $gold
+	border-left: 1px solid $gold
+	border-top: 1px solid $gold
+	border-bottom: 1px solid $gold
+	@include font-lig-norm()
+	font-size: 18px
+	padding: 15px
+	width: 420px
+
+.frame::after
+	display: inline-block
+	position: relative
+	content: ''
+	border-left: 1px solid $gold
+	border-bottom: 1px solid $gold
+	transform: rotate(45deg)
+	width: 37px
+	height: 38px
+	margin-right: 0px
+	top: 12px
+	left: -23px
+
+.casewrap
+	background-image: url("../img/case.png")
+	background-size: contain
+	background-repeat: no-repeat
+	width: 881px
+	height: 817px
+	position: relative
+	top: -130px
+	left: -150px
+
+.head-text
+	color: #ffffff
+	h1
+		font-weight: lighter !important
+		padding-top: 35px
+		font-size: 46px
+	p
+		padding-top: 20px
 
 @import "payments.sass"
 @import "media.sass"

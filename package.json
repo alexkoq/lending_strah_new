@@ -1,7 +1,6 @@
 {
-  "name": "project_template",
+  "name": "lending_strah_new",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,14 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "imagemin-pngquant": "^5.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkoq/lending_strah_new.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexkoq/lending_strah_new/issues"
+  },
+  "homepage": "https://github.com/alexkoq/lending_strah_new#readme",
+  "description": ""
 }
