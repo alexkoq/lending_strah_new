@@ -31,3 +31,30 @@
   font-style: normal
 
 $gold: #fdd716
+
+@mixin text-prop($align)
+  color: #444444
+  @if $align == 'right'
+    margin-right: 95px
+    text-align: right
+    margin-left: 25px
+  @if $align == 'left'
+    margin-left: 90px
+    text-align: left
+    margin-right: 25px
+  h3
+    font-size: 16px
+    @include font-bold-norm()
+    text-transform: uppercase
+    padding-bottom: 15px
+  p 
+    @include font-lig-norm()
+    line-height: 1.2em
+
+@mixin background ($path,$width,$height)
+  background-image: $path
+  background-size: contain
+  background-repeat: no-repeat
+  width: $width
+  height: $height
+  
