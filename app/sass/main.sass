@@ -34,14 +34,20 @@
 	left: -23px
 
 .casewrap
-	background-image: url("../img/case.png")
-	background-size: contain
-	background-repeat: no-repeat
-	width: 881px
-	height: 817px
-	position: relative
-	top: -130px
-	left: -150px
+	// background-image: url("../img/case.png")
+	// background-size: contain
+	// background-repeat: no-repeat
+	// width: 881px
+	// height: 817px
+	// position: relative
+	// top: -130px
+	// left: -150px
+	margin-top: -485px
+	margin-left: -135px
+	img	
+  	display: inline-block
+ 		height: auto
+  	width: 881px
 
 .head-text
 	color: #ffffff
@@ -82,10 +88,16 @@
 	background-image: url("../img/bg3.png")
 	background-size: cover
 	background-repeat: no-repeat
+	background-position-x: 50%
+	// background-color: $silver-blue
+	// border-top-left-radius: 10px 500px
+	// border-top-right-radius: 10px 500px
 	min-height: 822px
-	// position: relative
-	// top: -55px
 	margin-top: -55px
+	/* z-index: 2 */
+	// border-bottom-left-radius: 10000px 120px
+	// border-bottom-right-radius: 10000px 120px
+
 
 .middle-header h2
 	margin-top: 155px
@@ -109,7 +121,8 @@
 .sms-sign-img
 	@include background(url(../img/smartphone.png),103px,119px)
 
-	
+.middle-second
+	margin-top: 85px
 
 .platform-text
 	@include text-prop('right')
@@ -122,6 +135,106 @@
 
 .low-spread-text
 	@include text-prop('left')	
+
+.bottom
+	position: relative
+	top: -30px
+	background-image: url("../img/BG2.png")
+	background-size: cover
+	background-repeat: no-repeat
+	min-height: 991px
+
+.bottom-header-img
+	margin-top: -100px
+	margin-bottom: -130px
+	img
+		width: 100%
+
+
+.form-header
+	h3
+		display: inline-block
+		text-transform: uppercase
+		font-size: 24px
+		color: #ffffff
+		@include font-med-norm()
+		margin-bottom: 30px
+		text-align: center
+
+.leadform-wrap
+	min-height: 200px
+
+@import "../css/LeadForm"
+
+.policy
+  text-align: center 
+  padding-bottom: 15px
+  color: #ffffff
+  margin-top: 15px
+  @mixin font-lig-norm()
+  font-size: 12px
+  a 
+    color: #ffffff
+
+// .footer-wrap
+// 	background-image: url("../img/footer-bg.png")
+// 	background-size: cover
+// 	background-repeat: no-repeat
+// 	background-position-x: 50%
+// 	// margin-top: -50px
+// 	position: relative
+// 	top: -60px
+// 	margin-bottom: -60px
+
+.footer
+	//background-color: $dark_grey
+	min-height: 285px
+	color: $blue
+	background-image: url("../img/footer-bg.png")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position-x: 50%
+	margin-top: -50px
+	// position: relative
+	// top: -60px
+	// margin-bottom: -60px
+
+.links 
+  padding-top: 70px
+  padding-bottom: 20px
+ 	font-size: 16px
+ 	@include font-reg-norm()
+  div
+    padding-right: 0px
+    padding-left: 0px
+  a 
+    color: $blue
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.age-18
+  @include background(url(../img/18.png),31px,31px)
+  align-self: center
+
+.clean-100
+  @include background(url(../img/war_100.png),38px,38px)
+
+.ssl
+  @include background(url(../img/ssl.png),41px,35px)
+
+.bottom-text-wrap
+  color: $blue
+  text-align: center
+  font-size: 14px
+  line-height: 2em
+  padding-top: 20px
+
+.copyright
+  padding-top: 20px
+
+.cer
+	margin-left: 15px
 
 @import "payments.sass"
 @import "media.sass"

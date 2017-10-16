@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700&amp;subset=cyrillic");
 html {
   -webkit-box-sizing: border-box;
@@ -16,6 +17,10 @@ body {
 
 h4, h5, h6, h1, h2, h3, ul, p {
   margin: 0;
+}
+
+section {
+  display: block;
 }
 
 .head {
@@ -59,15 +64,14 @@ h4, h5, h6, h1, h2, h3, ul, p {
 }
 
 .casewrap {
-  background-image: url("../img/case.png");
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: -485px;
+  margin-left: -135px;
+}
+
+.casewrap img {
+  display: inline-block;
+  height: auto;
   width: 881px;
-  height: 817px;
-  position: relative;
-  top: -130px;
-  left: -150px;
 }
 
 .head-text {
@@ -119,8 +123,10 @@ h4, h5, h6, h1, h2, h3, ul, p {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 50%;
   min-height: 822px;
   margin-top: -55px;
+  /* z-index: 2 */
 }
 
 .middle-header h2 {
@@ -199,6 +205,10 @@ h4, h5, h6, h1, h2, h3, ul, p {
   height: 119px;
 }
 
+.middle-second {
+  margin-top: 85px;
+}
+
 .platform-text {
   color: #444444;
   margin-right: 95px;
@@ -263,6 +273,369 @@ h4, h5, h6, h1, h2, h3, ul, p {
   line-height: 1.2em;
 }
 
+.bottom {
+  position: relative;
+  top: -30px;
+  background-image: url("../img/BG2.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 991px;
+}
+
+.bottom-header-img {
+  margin-top: -100px;
+  margin-bottom: -130px;
+}
+
+.bottom-header-img img {
+  width: 100%;
+}
+
+.form-header h3 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.leadform-wrap {
+  min-height: 200px;
+}
+
+.leadFormContainer .leadForm {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*  align-items: center; */
+  font-size: 1em;
+}
+
+/*Header of form*/
+.leadFormContainer .FormHeaderDiv {
+  text-align: center;
+  display: none;
+}
+
+.leadFormContainer .FormHeader {
+  margin: auto;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 1.12em;
+  font-family: GothaProBol;
+}
+
+/******************************/
+/******DIVS***********/
+.leadFormContainer .commonDivs {
+  margin-top: 5px;
+  padding-top: 9px;
+  margin-bottom: 40px;
+  position: relative;
+  -webkit-flex-basis: 285px;
+      -ms-flex-preferred-size: 285px;
+          flex-basis: 285px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  color: #ffffff;
+  margin-right: 35px;
+}
+
+.leadFormContainer .countryDiv {
+  position: relative;
+}
+
+.leadFormContainer .phoneDiv {
+  margin-left: 1px;
+}
+
+.leadFormContainer .submitDiv {
+  margin-top: -10px;
+}
+
+.leadFormContainer .helpLinkDiv {
+  display: none;
+}
+
+.leadFormContainer .errMessageDiv {
+  display: none;
+  position: relative;
+  height: 12px;
+}
+
+/*******************/
+/*Input Lables*/
+.leadFormContainer .commonLabels {
+  position: absolute;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+  top: 23px;
+  left: 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: text;
+}
+
+.leadFormContainer .labelCountry {
+  display: none;
+}
+
+/**********************/
+.leadFormContainer .labelActive {
+  top: 2px;
+  left: 0px;
+  font-size: 0.75em;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/******Inputs***************/
+.leadFormContainer .commonInput {
+  padding-top: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #888888;
+  background-color: transparent;
+  width: 100%;
+  height: 35px;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 35px;
+  height: 35px;
+  /*text-indent: 10px;*/
+  outline: none;
+}
+
+.leadFormContainer .fnameInput:focus {
+  border-bottom-color: #ffffff;
+}
+
+.leadFormContainer .lnameInput:focus {
+  border-bottom-color: #ffffff;
+}
+
+.leadFormContainer .countryInput:focus {
+  border-bottom-color: #ffffff;
+}
+
+.leadFormContainer .phoneCountryInput {
+  width: 26%;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.leadFormContainer .phoneInput {
+  width: 74%;
+  margin-left: -5px;
+}
+
+.leadFormContainer .emailInput:focus {
+  border-bottom-color: #ffffff;
+}
+
+.leadFormContainer .submitButton {
+  width: 285px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  border: 0px;
+  color: #000000;
+  background-color: #fdd716;
+  font-size: 1.12em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.leadFormContainer .submitButton:hover {
+  background-color: #eb0069;
+}
+
+.leadFormContainer .submitButton:active {
+  background-color: #b00350;
+}
+
+.leadFormContainer .helpLink {
+  font-size: 0.75em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/***************************/
+.leadFormContainer .spanErrMessage {
+  color: #e64044;
+  font-size: 0.75em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+}
+
+.leadFormContainer .liveSearch {
+  position: absolute;
+  padding-left: 10px;
+  background-color: #f8f8f8;
+  z-index: 3;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  height: 200%;
+  overflow: auto;
+  border: 1px solid #888888;
+}
+
+.leadFormContainer .country {
+  margin-top: 10px;
+}
+
+.leadFormContainer .country:hover {
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+.leadFormContainer .errorInput {
+  border-bottom-color: #ff0000;
+}
+
+.leadFormContainer .rightInput {
+  border-bottom-color: #888888;
+}
+
+/*Убрать изменение цвета полсе автозаполнения Chrom*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/*****************************************/
+/********FONTS****************/
+.policy {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.policy a {
+  color: #ffffff;
+}
+
+.footer {
+  min-height: 285px;
+  color: #00214c;
+  background-image: url("../img/footer-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  margin-top: -50px;
+}
+
+.links {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.links div {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.links a {
+  color: #00214c;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.age-18 {
+  background-image: url(../img/18.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 31px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.clean-100 {
+  background-image: url(../img/war_100.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 38px;
+}
+
+.ssl {
+  background-image: url(../img/ssl.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 35px;
+}
+
+.bottom-text-wrap {
+  color: #00214c;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2em;
+  padding-top: 20px;
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+.cer {
+  margin-left: 15px;
+}
+
 .payments-wrap {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -283,13 +656,69 @@ h4, h5, h6, h1, h2, h3, ul, p {
           align-self: center;
 }
 
+@media (max-width: 1522px) {
+  .casewrap {
+    margin-top: -455px;
+    margin-left: -135px;
+  }
+  .casewrap img {
+    width: 781px;
+  }
+}
+
+@media (max-width: 1324px) {
+  .casewrap {
+    margin-top: -410px;
+    margin-left: -135px;
+  }
+  .casewrap img {
+    width: 681px;
+  }
+}
+
 @media (max-width: 1200px) {
+  .frame p {
+    padding-right: 0;
+  }
+  .casewrap {
+    margin-top: -385px;
+    margin-left: -12%;
+  }
+  .casewrap img {
+    width: 550px;
+  }
+  .links {
+    line-height: 26px;
+  }
+  .clean-100 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ut span {
+    display: none;
+  }
   .diners, .borse {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 991px) {
+  .links {
+    text-align: center;
+  }
+  .cer span {
+    display: inline;
+  }
+  .ut span {
+    display: none;
+  }
+  .cer {
+    text-align: left;
+    padding-right: 0px !important;
+  }
+  .arb {
+    text-align: right;
+  }
   .webmoney, .qiwi, .swift, .diners, .borse {
     margin-top: 20px;
   }
@@ -300,6 +729,38 @@ h4, h5, h6, h1, h2, h3, ul, p {
   .borse img {
     margin-right: auto;
     margin-left: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .ps, .pr, .cer, .ut, .arb {
+    text-align: center;
+  }
+  .ps span {
+    display: none;
+  }
+  .pr span {
+    display: none;
+  }
+  .cer span {
+    display: none;
+  }
+  .ut span {
+    display: none;
+  }
+  .cer {
+    padding-right: 0px !important;
+    margin-left: 0;
+  }
+  .arb {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .links-line-2 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 }
 

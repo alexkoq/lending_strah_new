@@ -1,0 +1,262 @@
+
+.leadFormContainer {
+}
+
+    .leadFormContainer .leadForm {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       /*  align-items: center; */
+        font-size: 1em;
+    }
+    /*Header of form*/
+    .leadFormContainer .FormHeaderDiv {
+        text-align: center;
+        display: none;
+    }
+
+    .leadFormContainer .FormHeader {
+        margin: auto;
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 1.12em;
+        font-family: GothaProBol;
+    }
+    /******************************/
+
+    /******DIVS***********/
+    .leadFormContainer .commonDivs {
+        margin-top: 5px;
+        padding-top: 9px;
+        margin-bottom: 40px;
+        position: relative;
+        flex-basis: 285px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1em;
+        color: #ffffff;
+        margin-right: 35px;
+    }
+
+    .leadFormContainer .fnameDiv {
+    }
+
+    .leadFormContainer .lnameDiv {
+    }
+
+    .leadFormContainer .countryDiv {
+        position: relative;
+    }
+
+    .leadFormContainer .phoneDiv {
+        margin-left: 1px;
+    }
+
+    .leadFormContainer .emailDiv {
+    }
+
+    .leadFormContainer .submitDiv {
+        margin-top: -10px;
+    }
+
+    .leadFormContainer .helpLinkDiv {
+        display: none;
+    }
+
+    .leadFormContainer .errMessageDiv {
+        display: none;
+        position: relative;
+        height: 12px;
+    }
+
+    /*******************/
+
+    /*Input Lables*/
+    .leadFormContainer .commonLabels {
+        position: absolute;
+        font-size: 1em;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #ffffff;
+        top: 23px;
+        left: 0px;
+        transition: 0.5s;
+        cursor: text;
+    }
+
+    .leadFormContainer .labelFname {
+    }
+
+    .leadFormContainer .labelLname {
+    }
+
+    .leadFormContainer .labelCountry {
+        display: none;
+    }
+
+    .leadFormContainer .labelPhone {
+    }
+
+    .leadFormContainer .labelEmail {
+    }
+
+    /**********************/
+
+    .leadFormContainer .labelActive {
+        top: 2px;
+        left: 0px;
+        font-size: 0.75em;
+        transition: 0.5s;
+    }
+
+    /******Inputs***************/
+    .leadFormContainer .commonInput {
+        padding-top: 5px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #888888;
+        background-color: transparent;
+        width: 100%;
+        height: 35px;
+        font-size: 1em;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #ffffff;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 35px;
+        height: 35px;
+        /*text-indent: 10px;*/
+        outline: none;
+
+    }
+
+
+    .leadFormContainer .fnameInput:focus {
+         border-bottom-color: #ffffff;
+    }
+
+    .leadFormContainer .lnameInput:focus {
+         border-bottom-color: #ffffff;
+    }
+
+    .leadFormContainer .countryInput:focus {
+         border-bottom-color: #ffffff;
+    }
+
+    .leadFormContainer .phoneCountryInput {
+        width: 26%;
+        color: #ffffff;
+        cursor: not-allowed;
+    }
+
+    .leadFormContainer .phoneInput {
+        width: 74%;
+        margin-left: -5px;
+    }
+
+    .leadFormContainer .emailInput:focus {
+         border-bottom-color: #ffffff;
+    }
+
+    .leadFormContainer .submitButton {
+        width: 285px;
+        height: 50px;
+        border-radius: 25px;
+        border: 0px;
+        color: #000000;
+        background-color: #fdd716;
+        font-size: 1.12em;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        cursor: pointer;
+    }
+
+        .leadFormContainer .submitButton:hover {
+            background-color: #eb0069;
+        }
+
+        .leadFormContainer .submitButton:active {
+            background-color: #b00350;
+        }
+
+
+    .leadFormContainer .helpLink {
+        font-size: 0.75em;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+
+    /***************************/
+    .leadFormContainer .spanErrMessage {
+        color: #e64044;
+        font-size: 0.75em;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        position: relative;     
+    }
+
+    .leadFormContainer .liveSearch {
+        position: absolute;
+        padding-left: 10px;
+        background-color: #f8f8f8;
+        z-index: 3;
+        width: 100%;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        height: 200%;
+        overflow: auto;
+        border: 1px solid #888888;        
+    }
+
+    .leadFormContainer .country {
+        margin-top:10px;
+    }
+
+        .leadFormContainer .country:hover {
+            background-color: #e7e7e7;
+            cursor: pointer;
+        }
+
+    .leadFormContainer #livesearch {
+    }
+
+    
+
+  
+    .leadFormContainer .emailInput {
+    }
+
+    .leadFormContainer .submitButton {
+    }
+
+
+    .leadFormContainer .errorInput {
+        border-bottom-color: #ff0000;
+    }
+
+    .leadFormContainer .rightInput {
+        border-bottom-color: #888888;
+    }
+
+/*Убрать изменение цвета полсе автозаполнения Chrom*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+/*****************************************/
+
+
+/********FONTS****************/
