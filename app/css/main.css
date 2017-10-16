@@ -702,7 +702,47 @@ input:-webkit-autofill {
   }
 }
 
+@media (max-width: 1065px) {
+  .casewrap {
+    margin-top: -310px;
+    margin-left: -9%;
+  }
+  .casewrap img {
+    width: 450px;
+  }
+}
+
 @media (max-width: 991px) {
+  .buttom_form a {
+    height: 60px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #333333;
+    text-transform: uppercase;
+    text-indent: 10px;
+  }
+  .buttom_form a::before {
+    display: inline-block;
+    content: url("../img/arrow-bold.png");
+    vertical-align: middle;
+    padding-top: 18px;
+    padding-right: 27px;
+    margin-left: -40px;
+    margin-right: 25px;
+    border-right: 1px solid #000000;
+    height: 60px;
+  }
+  .casewrap {
+    margin-top: -50px;
+    margin-left: -5%;
+  }
+  .casewrap img {
+    width: 450px;
+  }
   .links {
     text-align: center;
   }
@@ -729,6 +769,16 @@ input:-webkit-autofill {
   .borse img {
     margin-right: auto;
     margin-left: none;
+  }
+}
+
+@media (max-width: 870px) {
+  .casewrap {
+    margin-top: -50px;
+    margin-left: -5%;
+  }
+  .casewrap img {
+    width: 450px;
   }
 }
 
