@@ -20,6 +20,12 @@
     img
       width: 550px
 
+  .study-text,.platform-text
+    margin-right: 50px
+
+  .sms-sign-text,.low-spread-text
+    margin-left: 50px
+
   .links
     line-height: 26px
 
@@ -58,6 +64,70 @@
         margin-right: 25px
         border-right: 1px solid #000000
         height: 60px
+  
+  .middle p
+    @include font-reg-norm()
+
+  .middle-header h2
+    margin-top: 100px
+    padding-bottom: 50px
+
+  .study>.row
+   flex-direction: column-reverse
+   justify-content: flex-end
+   padding-top: 4px
+   
+   
+
+  .study .study-img
+    align-self: flex-end !important
+    margin-right: 48px
+    margin-bottom: 38px
+
+  .study .study-text
+    margin-right: 0
+    align-self: flex-end
+    margin-right: 33px
+
+  .middle-second
+    margin-top: 50px
+
+
+  .platform>.row
+   flex-direction: column-reverse
+
+  .platform .platform-img
+    align-self: flex-end !important
+    margin-right: 48px
+    margin-bottom: 25px
+  
+  .platform .platform-text
+    margin-right: 0
+    align-self: flex-end
+    margin-right: 33px
+
+  .sms-sign>.row
+    justify-content: flex-start!important
+
+  .sms-sign .sms-sign-text
+    margin-left: 33px
+    align-self: flex-start
+
+
+  .sms-sign .sms-sign-img
+    margin-left: 48px
+    margin-bottom: 30px
+
+  .low-spread>.row
+    justify-content: flex-start!important
+
+  .low-spread .low-spread-img
+    margin-left: 48px
+    margin-bottom: 26px
+
+  .low-spread .low-spread-text
+    margin-left: 33px
+    align-self: flex-start
 
   .casewrap 
     margin-top: -50px
@@ -96,11 +166,14 @@
 @media (max-width: 870px)
   .casewrap 
     margin-top: -50px
-    margin-left: -5%
+    margin-left: -10%
     img
-      width: 450px
+      width: 440px
 
 @media (max-width: 767px)
+  .casewrap
+    display: none
+
   .ps,.pr,.cer,.ut,.arb 
     text-align: center;
   .ps span
