@@ -171,8 +171,83 @@
       width: 440px
 
 @media (max-width: 767px)
+  .head
+    min-height: 680px
   .casewrap
     display: none
+
+  .button-top-wrap
+    justify-content: center
+  .buttom_form a
+    margin-top: 50px
+  
+  .study
+    padding-left: 30px
+    padding-right: 30px
+
+  .study>.row
+   flex-direction: column-reverse
+   justify-content: center
+   padding-top: 4px
+   
+  .study .study-img
+    align-self: center !important
+    margin-right: 0px
+    margin-bottom: 38px
+
+  .study .study-text
+    margin-right: 0
+    align-self: center
+    margin-right: 0px
+    text-align: center
+    margin-left: 0 
+
+  .middle-second
+    margin-top: 50px
+
+  .platform>.row
+   flex-direction: column-reverse
+
+  .platform .platform-img
+    align-self: center !important
+    margin-right: 0px
+    margin-bottom: 25px
+  
+  .platform .platform-text
+    margin-right: 0
+    align-self: center
+    margin-right: 0px
+    text-align: center
+    margin-left: 0
+
+  .sms-sign>.row
+    justify-content: center !important
+
+  .sms-sign .sms-sign-text
+    margin-left: 0px
+    margin-right: 0
+    align-self: center
+    text-align: center
+
+  .sms-sign-text br
+
+
+  .sms-sign .sms-sign-img
+    margin-left: 0px
+    margin-bottom: 30px
+
+  .low-spread>.row
+    justify-content: center !important
+
+  .low-spread .low-spread-img
+    margin-left: 0px
+    margin-bottom: 26px
+
+  .low-spread .low-spread-text
+    margin-left: 0px
+    margin-right: 0
+    align-self: center
+    text-align: center
 
   .ps,.pr,.cer,.ut,.arb 
     text-align: center;
@@ -196,6 +271,52 @@
     padding-left: 0px !important
 
 @media (max-width: 576px)
+  .head 
+    min-height: 600px
+
+  .logo
+    text-align: center
+  .head-text 
+    h1
+      font-size: 32px
+      text-align: center
+    p 
+      text-align: center
+  .buttom_form a
+    margin-left: auto
+    margin-right: auto
+
   .links-line-2
     padding-right: 15px !important
     padding-left: 15px !important
+
+@media (max-width: 500px)
+  .frame
+    min-height: 74px
+    margin-left: -41px
+
+  .frame br
+    display: block
+  .frame p
+    width: 260px
+
+  .frame::after
+    border-bottom: none
+    width: 1px
+    height: 43px
+    margin-right: 0px
+    transform: rotate(30deg)
+    top: -14px
+    left: -15px
+
+  .frame::before
+    display: inline-block
+    position: relative
+    content: ''
+    border-bottom: 1px solid $gold
+    transform: rotate(60deg)
+    width: 42px
+    height: 1px
+    margin-right: 0px
+    top: 2px
+    left: 271px

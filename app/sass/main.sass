@@ -8,9 +8,14 @@
 	min-height: 720px
 	padding-top: 60px
 
+.logo
+	margin-bottom: 50px
+
+.frame	
+	overflow: hidden		
+
 .frame p
 	display: inline-block
-	margin-top: 110px
 	color: $gold
 	border-left: 1px solid $gold
 	border-top: 1px solid $gold
@@ -19,6 +24,9 @@
 	font-size: 18px
 	padding: 15px
 	width: 420px
+ 
+.frame br
+    display: none
 
 .frame::after
 	display: inline-block
@@ -92,14 +100,17 @@
 	min-height: 822px
 	margin-top: -55px
 
-.middle-header h2
-	margin-top: 155px
-	text-align: center
-	color: #444444
-	@include font-med-norm()
-	font-size: 24px 
-	text-transform: uppercase
-	padding-bottom: 105px
+.middle-header 
+	padding-left: 15px
+	padding-right: 15px
+	h2
+		margin-top: 155px
+		text-align: center
+		color: #444444
+		@include font-med-norm()
+		font-size: 24px 
+		text-transform: uppercase
+		padding-bottom: 105px
 
 
 .study-text
