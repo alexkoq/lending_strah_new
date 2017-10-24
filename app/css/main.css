@@ -36,6 +36,26 @@ section {
   margin-bottom: 50px;
 }
 
+.move-wrap {
+  width: 1px;
+  width-height: 1px;
+  width-position: absolute;
+  width-top: 100px;
+  left: 300px;
+  left-overflow: hidden;
+}
+
+.bux {
+  background-image: url(../img/dollar3.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 124px;
+  height: 181px;
+  position: relative;
+  z-index: 1;
+}
+
 .frame {
   overflow: hidden;
 }
@@ -107,6 +127,9 @@ section {
           border-radius: 25px;
   background-color: #fdd716;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   text-decoration: none;
   margin-top: 50px;
@@ -114,15 +137,22 @@ section {
 }
 
 .buttom_form a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #ffe146;
+}
+
+.buttom_form a:active {
+  background-color: #e2c014;
 }
 
 .buttom_form a::before {
   display: inline-block;
-  content: url("../img/arrow.png");
+  content: '+';
   vertical-align: middle;
-  padding-top: 13px;
-  padding-right: 13px;
+  font-weight: 400;
+  font-size: 21px;
+  padding-top: 11px;
+  padding-right: 23px;
   margin-left: -30px;
   margin-right: 45px;
   border-right: 1px solid #000000;
@@ -294,18 +324,20 @@ section {
           background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: -37px;
+  background-position-y: 0px;
   min-height: 991px;
-  margin-top: -20px;
+  margin-top: -75px;
 }
 
 .bottom-header-img {
   margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .bottom-header-img img {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .form-header h3 {
@@ -499,11 +531,16 @@ section {
 }
 
 .leadFormContainer .submitButton:hover {
-  background-color: #eb0069;
+  background-color: #ffe146;
 }
 
 .leadFormContainer .submitButton:active {
-  background-color: #b00350;
+  background-color: #e2c014;
+  outline: none;
+}
+
+.leadFormContainer .submitButton:focus {
+  outline: none;
 }
 
 .leadFormContainer .helpLink {
@@ -709,6 +746,18 @@ input:-webkit-autofill {
   .sms-sign-text, .low-spread-text {
     margin-left: 50px;
   }
+  .leadFormContainer .commonDivs {
+    margin-bottom: 20px;
+  }
+  .leadFormContainer .lnameDiv {
+    margin-right: 0;
+  }
+  .leadFormContainer .phoneDiv {
+    margin-right: 0;
+  }
+  .leadFormContainer .submitDiv {
+    margin-right: 0;
+  }
   .links {
     line-height: 26px;
   }
@@ -744,19 +793,21 @@ input:-webkit-autofill {
     font-weight: 500;
     font-style: normal;
     color: #333333;
-    text-transform: uppercase;
     text-indent: 10px;
   }
   .buttom_form a::before {
     display: inline-block;
-    content: url("../img/arrow-bold.png");
+    content: '+';
     vertical-align: middle;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-right: 27px;
     margin-left: -40px;
     margin-right: 25px;
     border-right: 1px solid #000000;
     height: 60px;
+  }
+  .middle {
+    min-height: 900px;
   }
   .middle p {
     font-family: 'Ubuntu', sans-serif;
@@ -898,6 +949,10 @@ input:-webkit-autofill {
 @media (max-width: 767px) {
   .head {
     min-height: 680px;
+    padding-top: 30px;
+  }
+  .logo {
+    margin-bottom: 30px;
   }
   .casewrap {
     display: none;
@@ -911,9 +966,13 @@ input:-webkit-autofill {
   .buttom_form a {
     margin-top: 50px;
   }
+  .middle-header h2 {
+    padding-bottom: 30px;
+  }
   .study {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 47px;
   }
   .study > .row {
     -webkit-box-orient: vertical;
@@ -932,7 +991,7 @@ input:-webkit-autofill {
         -ms-flex-item-align: center !important;
             align-self: center !important;
     margin-right: 0px;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .study .study-text {
     margin-right: 0;
@@ -946,6 +1005,9 @@ input:-webkit-autofill {
   .middle-second {
     margin-top: 50px;
   }
+  .platform {
+    margin-bottom: 47px;
+  }
   .platform > .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -958,7 +1020,7 @@ input:-webkit-autofill {
         -ms-flex-item-align: center !important;
             align-self: center !important;
     margin-right: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .platform .platform-text {
     margin-right: 0;
@@ -983,9 +1045,16 @@ input:-webkit-autofill {
             align-self: center;
     text-align: center;
   }
+  .sms-sign-text br {
+    display: none;
+  }
   .sms-sign .sms-sign-img {
-    margin-left: 0px;
+    margin-left: 80px;
     margin-bottom: 30px;
+    margin-right: 45px;
+  }
+  .low-spread {
+    margin-bottom: 50px;
   }
   .low-spread > .row {
     -webkit-box-pack: center !important;
@@ -994,8 +1063,9 @@ input:-webkit-autofill {
             justify-content: center !important;
   }
   .low-spread .low-spread-img {
-    margin-left: 0px;
-    margin-bottom: 26px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
   }
   .low-spread .low-spread-text {
     margin-left: 0px;
@@ -1004,6 +1074,15 @@ input:-webkit-autofill {
         -ms-flex-item-align: center;
             align-self: center;
     text-align: center;
+  }
+  .bottom {
+    margin-top: -80px;
+  }
+  .bottom-header-img {
+    margin-top: 120px;
+  }
+  .leadFormContainer .commonDivs {
+    margin-right: 0;
   }
   .ps, .pr, .cer, .ut, .arb {
     text-align: center;
@@ -1046,10 +1125,14 @@ input:-webkit-autofill {
   .buttom_form a {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 70px;
   }
   .links-line-2 {
     padding-right: 15px !important;
     padding-left: 15px !important;
+  }
+  .bottom {
+    margin-top: -85px;
   }
 }
 

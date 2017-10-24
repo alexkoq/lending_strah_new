@@ -183,11 +183,15 @@
     }
 
         .leadFormContainer .submitButton:hover {
-            background-color: #eb0069;
+            background-color: #ffe146;
         }
 
         .leadFormContainer .submitButton:active {
-            background-color: #b00350;
+            background-color: #e2c014;
+            outline:none;
+        }
+        .leadFormContainer .submitButton:focus {
+            outline:none;
         }
 
 
