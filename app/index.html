@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css/animate.css">
   <script src="script/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="script/wow.min.js" type="text/javascript"></script>
-  <script src="script/main.js" type="text/javascript"></script>
+  <script src="script/parallax.min.js" type="text/javascript"></script>
+  <!-- <script src="script/main.js" type="text/javascript"></script> -->
   <script src="https://l2.io/ip.js?var=userip"></script>
 
   <title></title>
@@ -17,8 +18,16 @@
   <header>
     <div class="head">
       <div class="container">
-        <div class="move-wrap">
-          <div class="bux"></div>
+        <div id="move-wrap">
+          <div data-depth="0.5" class="bux1"></div>
+          <div data-depth="0.3" class="bux2"></div>
+          <div data-depth="0.35" class="bux3"></div>
+          <div data-depth="0.4" class="bux4"></div>
+          <div data-depth="0.3" class="bux5"></div>
+          <div data-depth="0.8" class="bux6"></div>
+          <div data-depth="0.4" class="bux7"></div>
+          <div data-depth="0.6" class="bux8"></div>
+          <div data-depth="0.1" class="bux9"></div>
         </div>
         <div class="row">
           <div class="col-xl-2 logo"><img src="img/logo.png" alt="logo"></div>
@@ -57,7 +66,7 @@
       </div>
       <div class="row justify-content-end">
 
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 study">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 study wow bounceInLeft" data-wow-duration="1.5s">
           <div class="row justify-content-start">
             <div class="col-12 col-sm-8 col-md-10 col-lg-6 col-xl-6 study-text">
               <h3>Доступ к обучающим материалам</h3>
@@ -66,7 +75,7 @@
             <div class="col-xl-auto align-self-center study-img"></div>
           </div>  
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 sms-sign">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 sms-sign wow bounceInRight" data-wow-duration="1.5s">
           <div class="row justify-content-end">
             <div class="col-xl-auto align-self-center sms-sign-img"></div>
             <div class="col-12 col-sm-8 col-md-9 col-lg-6 col-xl-6 sms-sign-text">
@@ -77,7 +86,7 @@
         </div>
       </div>
       <div class="row justify-content-end middle-second">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 platform">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 platform wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">
           <div class="row justify-content-start">
             <div class="col-12 col-sm-8 col-md-10 col-lg-6 col-xl-6 platform-text">
               <h3>Собственная онлайн<br>платформа</h3>
@@ -86,7 +95,7 @@
             <div class="col-xl-auto align-self-center platform-img"></div>
           </div>  
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 low-spread">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 low-spread wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="0.1s">
           <div class="row justify-content-end">
             <div class="col-xl-auto align-self-center low-spread-img"></div>
             <div class="col-12 col-sm-8 col-md-10 col-lg-6 col-xl-6 low-spread-text">
@@ -225,5 +234,14 @@
     }
     )
   wow.init();</script>
+  <script>
+  // Pretty simple huh?
+  var scene = document.getElementById('move-wrap');
+  var parallax = new Parallax(scene, {
+  relativeInput: true,
+  // limitX: 50,
+  // limitY: 50,
+});
+  </script>
 </body>
 </html>

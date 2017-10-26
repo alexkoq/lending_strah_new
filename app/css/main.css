@@ -33,27 +33,115 @@ section {
 }
 
 .logo {
-  margin-bottom: 50px;
+  margin-bottom: 105px;
 }
 
-.move-wrap {
+#move-wrap {
   width: 1px;
-  width-height: 1px;
-  width-position: absolute;
-  width-top: 100px;
-  left: 300px;
-  left-overflow: hidden;
+  height: 1px;
+  position: relative !important;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
 }
 
-.bux {
+.bux1 {
+  background-image: url(../img/dollar1.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 111px;
+  top: 450px !important;
+  left: -250px !important;
+}
+
+.bux2 {
+  background-image: url(../img/dollar2.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 125px;
+  top: 250px !important;
+  left: -350px !important;
+}
+
+.bux3 {
   background-image: url(../img/dollar3.png);
   -webkit-background-size: contain;
           background-size: contain;
   background-repeat: no-repeat;
   width: 124px;
   height: 181px;
-  position: relative;
-  z-index: 1;
+  top: -20px !important;
+  left: -250px !important;
+}
+
+.bux4 {
+  background-image: url(../img/dollar4.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 156px;
+  top: -60px !important;
+  left: 350px !important;
+}
+
+.bux5 {
+  background-image: url(../img/dollar5.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 125px;
+  top: 130px !important;
+  left: 1200px !important;
+}
+
+.bux6 {
+  background-image: url(../img/dollar6.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 117px;
+  top: -60px !important;
+  left: 1100px !important;
+}
+
+.bux7 {
+  background-image: url(../img/dollar7.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 125px;
+  top: 360px !important;
+  left: 1000px !important;
+}
+
+.bux8 {
+  background-image: url(../img/dollar8.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 59px;
+  height: 133px;
+  top: 520px !important;
+  left: 600px !important;
+}
+
+.bux9 {
+  background-image: url(../img/dollar9.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 197px;
+  top: 0px !important;
+  left: 700px !important;
 }
 
 .frame {
@@ -774,6 +862,9 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 1065px) {
+  #move-wrap {
+    display: none;
+  }
   .casewrap {
     margin-top: -310px;
     margin-left: -9%;
