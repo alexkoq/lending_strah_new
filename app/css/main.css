@@ -30,6 +30,7 @@ section {
   background-repeat: no-repeat;
   min-height: 720px;
   padding-top: 60px;
+  overflow: hidden;
 }
 
 .logo {
@@ -255,6 +256,7 @@ section {
   background-position-x: 50%;
   min-height: 822px;
   margin-top: -55px;
+  overflow: hidden;
 }
 
 .middle-header {
@@ -265,7 +267,7 @@ section {
 .middle-header h2 {
   margin-top: 155px;
   text-align: center;
-  color: #444444;
+  color: #222222;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -275,7 +277,7 @@ section {
 }
 
 .study-text {
-  color: #444444;
+  color: #222222;
   margin-right: 95px;
   text-align: right;
   margin-left: 25px;
@@ -307,7 +309,7 @@ section {
 }
 
 .sms-sign-text {
-  color: #444444;
+  color: #222222;
   margin-left: 90px;
   text-align: left;
   margin-right: 25px;
@@ -343,7 +345,7 @@ section {
 }
 
 .platform-text {
-  color: #444444;
+  color: #222222;
   margin-right: 95px;
   text-align: right;
   margin-left: 25px;
@@ -384,7 +386,7 @@ section {
 }
 
 .low-spread-text {
-  color: #444444;
+  color: #222222;
   margin-left: 90px;
   text-align: left;
   margin-right: 25px;
@@ -613,7 +615,7 @@ section {
   background-color: #fdd716;
   font-size: 1.12em;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   cursor: pointer;
 }
@@ -1174,6 +1176,9 @@ input:-webkit-autofill {
   }
   .leadFormContainer .commonDivs {
     margin-right: 0;
+  }
+  .payments-wrap {
+    padding-top: 60px;
   }
   .ps, .pr, .cer, .ut, .arb {
     text-align: center;

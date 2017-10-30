@@ -45,7 +45,7 @@
         </div>
         <div class="row button-top-wrap">
           <div class=" col-sm-7 col-md-6 col-lg-7 col-xl-6 ">
-            <div class="buttom_form"><a href="">Участвовать!</a>
+            <div class="buttom_form"><a href="#bottom-form">Участвовать!</a>
             </div>
           </div>
           <div class="col-sm-5 col-md-6 col-lg-5 col-xl-6 casewrap">
@@ -107,7 +107,7 @@
       </div>
     </div>
   </section>
-  <section class="bottom">
+  <section class="bottom" id="bottom-form">
     <div class="container">
       <div class="row justify-content-center">
         <div class="bottom-header-img"><img src="img/new_pachka.png" alt="dollar">
@@ -229,7 +229,7 @@
     	boxClass:     'wow',      // default
     	animateClass: 'animated', // default
     	offset:       0,          // default
-    	mobile:       false,       // default
+    	mobile:       true,       // default
     	live:         true        // default
     }
     )
@@ -242,6 +242,16 @@
   // limitX: 50,
   // limitY: 50,
 });
+  </script>
+  <script type="text/javascript"> 
+    window.jQuery(document).ready(function(){ 
+      window.jQuery(".buttom_form").on("click","a", function (event) { 
+       event.preventDefault(); 
+       var id = window.jQuery(this).attr('href'), 
+       top = window.jQuery(id).offset().top; 
+       window.jQuery('body,html').animate({scrollTop: top}, 1000); 
+     }); 
+    }); 
   </script>
 </body>
 </html>
